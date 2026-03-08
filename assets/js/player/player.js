@@ -116,41 +116,36 @@ export const initAnimePlayer = async ({
   }
 
   /*
-  =====================
-  MP4 STREAM (PixelDrain)
-  =====================
-  */
+=====================
+MP4 STREAM (PixelDrain)
+=====================
+*/
 
   else if (stream?.type === "mp4") {
 
-    const iframe = document.createElement("iframe");
+    video.src = stream.file.replace("?download", "");
 
-    iframe.src = stream.file.replace(
-      "https://pixeldrain.com/api/file/",
-      "https://pixeldrain.com/u/"
-    );
+    video.crossOrigin = "anonymous";
 
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.border = "0";
-    iframe.allow = "fullscreen";
+    video.load();
 
-    video.style.display = "none";
+    video.addEventListener(
+      "loadedmetadata",
+      () => {
 
-    playerShell.appendChild(iframe);
+        controls.setLoading(false);
 
-    controls.setLoading(false);
+        controls.setQualityOptions([]);
 
-    return {
-      controls,
-      backend: null,
-      destroy() {
-        controls.destroy();
+        controls.setCurrentQuality("auto");
+
+        if (anime.autoplay) {
+          video.play().catch(() => { });
+        }
+
       },
-      getActiveSubtitle() {
-        return null;
-      }
-    };
+      { once: true }
+    );
 
   }
 
