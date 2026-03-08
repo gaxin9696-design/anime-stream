@@ -35,7 +35,7 @@
           "thumbnail": "/media/anime/yosuga-no-sora/backdrop.jpg",
           "stream": {
             "type": "mp4",
-            "file": "https://pixeldrain.com/api/file/J5gw4m4N"
+            "file": "https://pixeldrain.com/api/file/J5gw4m4N?download"
           },
           "subtitles": [
             {
@@ -61,7 +61,7 @@
           "thumbnail": "/media/anime/yosuga-no-sora/backdrop.jpg",
           "stream": {
             "type": "mp4",
-            "file": "https://pixeldrain.com/api/file/GrNsp4Tt"
+            "file": "https://pixeldrain.com/api/file/GrNsp4Tt?download"
           },
           "subtitles": [
             {
