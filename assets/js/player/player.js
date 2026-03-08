@@ -58,9 +58,9 @@ export const initAnimePlayer = async ({
 
     onNext: nextEpisode
       ? () => {
-          globalThis.location.href =
-            watchUrl(anime.id, nextEpisode.season, nextEpisode.number);
-        }
+        globalThis.location.href =
+          watchUrl(anime.id, nextEpisode.season, nextEpisode.number);
+      }
       : null
   });
 
@@ -93,7 +93,7 @@ export const initAnimePlayer = async ({
           controls.setLoading(false);
 
           if (anime.autoplay) {
-            video.play().catch(() => {});
+            video.play().catch(() => { });
           }
         },
 
@@ -125,13 +125,15 @@ export const initAnimePlayer = async ({
 
     const iframe = document.createElement("iframe");
 
-    iframe.src = stream.file
-      .replace("/api/file/", "/u/");
+    iframe.src = stream.file.replace(
+      "https://pixeldrain.com/api/file/",
+      "https://pixeldrain.com/u/"
+    );
 
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.border = "0";
-    iframe.allowFullscreen = true;
+    iframe.allow = "fullscreen";
 
     video.style.display = "none";
 
@@ -139,25 +141,16 @@ export const initAnimePlayer = async ({
 
     controls.setLoading(false);
 
-  }
-
-    video.addEventListener(
-      "loadedmetadata",
-      () => {
-
-        controls.setLoading(false);
-
-        controls.setQualityOptions([]);
-
-        controls.setCurrentQuality("auto");
-
-        if (anime.autoplay) {
-          video.play().catch(() => {});
-        }
-
+    return {
+      controls,
+      backend: null,
+      destroy() {
+        controls.destroy();
       },
-      { once: true }
-    );
+      getActiveSubtitle() {
+        return null;
+      }
+    };
 
   }
 
@@ -198,7 +191,7 @@ export const initAnimePlayer = async ({
         progress?.currentTime &&
         progress.currentTime > 15 &&
         progress.currentTime <
-          Math.max(duration - 30, 15);
+        Math.max(duration - 30, 15);
 
       if (resumeAllowed) {
 
