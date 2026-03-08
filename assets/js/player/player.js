@@ -123,8 +123,23 @@ export const initAnimePlayer = async ({
 
   else if (stream?.type === "mp4") {
 
-    video.src = stream.file;
-    video.load();
+    const iframe = document.createElement("iframe");
+
+    iframe.src = stream.file
+      .replace("/api/file/", "/u/");
+
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.border = "0";
+    iframe.allowFullscreen = true;
+
+    video.style.display = "none";
+
+    playerShell.appendChild(iframe);
+
+    controls.setLoading(false);
+
+  }
 
     video.addEventListener(
       "loadedmetadata",
