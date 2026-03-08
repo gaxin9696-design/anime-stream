@@ -15,7 +15,7 @@
   "poster": "/media/anime/yosuga-no-sora/poster.jpg",
   "cover": "/media/anime/yosuga-no-sora/cover.jpg",
   "backdrop": "/media/anime/yosuga-no-sora/backdrop.jpg",
-  "summary": "Hai anh em trở lại quê cũ sau biến cố gia đình. Dữ liệu này chỉ nhằm minh hoạ pipeline player và metadata.",
+  "summary": "Hai anh em trở lại quê cũ sau biến cố gia đình.",
   "synopsis": "Bản demo cho genre drama/romance, đủ để test homepage sections, filters và trang xem với phụ đề đa ngôn ngữ.",
   "studio": "feel.",
   "maturity": "18+",
@@ -29,14 +29,13 @@
           "season": 1,
           "number": 1,
           "title": "A Distant Sky",
-          "overview": "Demo tập 1 với visual mềm, phù hợp để test card romance/drama.",
-          "duration": "00:00:12",
-          "durationSeconds": 12,
-          "badge": "Demo HLS",
+          "overview": "Episode 1",
+          "duration": "25:00",
+          "durationSeconds": 1500,
           "thumbnail": "/media/anime/yosuga-no-sora/backdrop.jpg",
           "stream": {
-            "type": "hls",
-            "master": "/media/anime/yosuga-no-sora/s01/e01/master.m3u8"
+            "type": "mp4",
+            "file": "https://pixeldrain.com/api/file/J5gw4m4N"
           },
           "subtitles": [
             {
@@ -56,14 +55,13 @@
           "season": 1,
           "number": 2,
           "title": "Looking Up at the Sky",
-          "overview": "Demo tập 2 để thử chuyển tập trong cùng season.",
-          "duration": "00:00:12",
-          "durationSeconds": 12,
-          "badge": "Demo HLS",
+          "overview": "Episode 2",
+          "duration": "25:00",
+          "durationSeconds": 1500,
           "thumbnail": "/media/anime/yosuga-no-sora/backdrop.jpg",
           "stream": {
-            "type": "hls",
-            "master": "/media/anime/yosuga-no-sora/s01/e02/master.m3u8"
+            "type": "mp4",
+            "file": "https://pixeldrain.com/api/file/GrNsp4Tt"
           },
           "subtitles": [
             {
@@ -82,5 +80,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-03-05T00:00:00.000Z"
+  "updatedAt": "2026-03-08T00:00:00.000Z"
 }
