@@ -123,8 +123,7 @@ export const initAnimePlayer = async ({
 
   else if (stream?.type === "mp4") {
 
-    video.src = stream.file.replace("/api/file/", "/api/file/");
-    video.crossOrigin = "anonymous";
+    video.src = stream.file;
     video.load();
 
     video.addEventListener(
