@@ -1,0 +1,56 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="color-scheme" content="dark light" />
+      <meta name="description" content="Anime Stream: web anime streaming static với HLS.js, Cloudflare Pages và R2." />
+      <title>Anime Stream - Trang chủ</title>
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="stylesheet" href="/assets/css/main.css"> <link rel="stylesheet" href="/assets/css/home.css">
+      <script>
+        window.ANIME_STREAM_CONFIG = Object.assign(
+          {
+            siteName: "Anime Stream",
+            siteTagline: "Streaming anime static + HLS + Cloudflare R2",
+            dataBaseUrl: "/data",
+            mediaBaseUrl: "/media",
+            cdnBaseUrl: ""
+          },
+          window.ANIME_STREAM_CONFIG || {}
+        );
+      </script>
+    </head>
+    <body class="page-home">
+      <header data-app-header></header>
+      <main class="page container">
+        <section class="page-intro">
+  <div>
+    <p class="page-intro__eyebrow">Netflix mini • Static streaming • 0đ trong free tier</p>
+    <h1>Anime Stream</h1>
+    <p class="page-intro__description">
+      Dự án mẫu cho web anime streaming chạy bằng Cloudflare Pages, R2 và HLS.js.
+    </p>
+  </div>
+  <div class="page-status" id="home-status" data-status="idle">Đang chờ tải dữ liệu...</div>
+</section>
+
+<section class="hero-banner" id="hero-banner"></section>
+
+<section class="content-section">
+  <div class="section-heading">
+    <div>
+      <h2>Tiếp tục xem</h2>
+      <p>Lịch sử xem được lưu trong trình duyệt bằng localStorage.</p>
+    </div>
+  </div>
+  <div class="history-grid" id="continue-watching"></div>
+</section>
+
+<div id="home-sections"></div>
+
+      </main>
+      <footer data-app-footer></footer>
+      <script type="module" src="/assets/js/pages/home.js"></script>
+    </body>
+    </html>

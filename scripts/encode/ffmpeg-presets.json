@@ -1,0 +1,34 @@
+{
+  "segmentDuration": 6,
+  "videoCodec": "libx264",
+  "audioCodec": "aac",
+  "audioBitrate": "128k",
+  "preset": "veryfast",
+  "crf": 21,
+  "qualities": [
+    {
+      "name": "360p",
+      "width": 640,
+      "height": 360,
+      "videoBitrate": "800k",
+      "maxrate": "856k",
+      "bufsize": "1200k"
+    },
+    {
+      "name": "720p",
+      "width": 1280,
+      "height": 720,
+      "videoBitrate": "2800k",
+      "maxrate": "2996k",
+      "bufsize": "4200k"
+    },
+    {
+      "name": "1080p",
+      "width": 1920,
+      "height": 1080,
+      "videoBitrate": "5000k",
+      "maxrate": "5350k",
+      "bufsize": "7500k"
+    }
+  ]
+}

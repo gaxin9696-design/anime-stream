@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-03-07T20:32:33.880Z",
+  "total": 3,
+  "items": [
+    {
+      "id": "attack-on-titan",
+      "slug": "attack-on-titan",
+      "title": "Attack on Titan",
+      "titleOriginal": "Shingeki no Kyojin",
+      "year": 2013,
+      "rating": 9.1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy"
+      ],
+      "status": "Completed",
+      "type": "TV",
+      "episodes": 2,
+      "poster": "/media/anime/attack-on-titan/poster.jpg",
+      "cover": "/media/anime/attack-on-titan/cover.jpg",
+      "backdrop": "/media/anime/attack-on-titan/backdrop.jpg",
+      "summary": "Nhân loại bị dồn vào bên trong những bức tường khổng lồ, nơi họ đối mặt với hiểm họa Titan. Đây là metadata demo để thử trang chi tiết và player HLS.",
+      "studio": "Wit Studio",
+      "maturity": "16+",
+      "duration": "24 phút / tập",
+      "popularity": 20,
+      "hasMedia": true,
+      "updatedAt": "2026-03-07T00:00:00.000Z"
+    },
+    {
+      "id": "naruto",
+      "slug": "naruto",
+      "title": "Naruto",
+      "titleOriginal": "ナルト",
+      "year": 2002,
+      "rating": 8.4,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Shounen"
+      ],
+      "status": "Completed",
+      "type": "TV",
+      "episodes": 2,
+      "poster": "/media/anime/naruto/poster.jpg",
+      "cover": "/media/anime/naruto/cover.jpg",
+      "backdrop": "/media/anime/naruto/backdrop.jpg",
+      "summary": "Naruto Uzumaki là cậu bé ninja ồn ào luôn khao khát được công nhận. Bản metadata mẫu được rút gọn để làm demo frontend.",
+      "studio": "Studio Pierrot",
+      "maturity": "13+",
+      "duration": "23 phút / tập",
+      "popularity": 20,
+      "hasMedia": true,
+      "updatedAt": "2026-03-06T00:00:00.000Z"
+    },
+    {
+      "id": "yosuga-no-sora",
+      "slug": "yosuga-no-sora",
+      "title": "Yosuga no Sora",
+      "titleOriginal": "ヨスガノソラ",
+      "year": 2010,
+      "rating": 7.1,
+      "genres": [
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ],
+      "status": "Completed",
+      "type": "TV",
+      "episodes": 2,
+      "poster": "/media/anime/yosuga-no-sora/poster.jpg",
+      "cover": "/media/anime/yosuga-no-sora/cover.jpg",
+      "backdrop": "/media/anime/yosuga-no-sora/backdrop.jpg",
+      "summary": "Hai anh em trở lại quê cũ sau biến cố gia đình. Dữ liệu này chỉ nhằm minh hoạ pipeline player và metadata.",
+      "studio": "feel.",
+      "maturity": "18+",
+      "duration": "25 phút / tập",
+      "popularity": 20,
+      "hasMedia": true,
+      "updatedAt": "2026-03-05T00:00:00.000Z"
+    }
+  ]
+}

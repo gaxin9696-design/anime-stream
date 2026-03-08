@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="color-scheme" content="dark light" />
+      <meta name="description" content="Anime Stream demo: static streaming site với HLS, Cloudflare Pages và R2." />
+      <title>Anime Stream - Xem anime</title>
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="stylesheet" href="/assets/css/main.css"> <link rel="stylesheet" href="/assets/css/watch.css"> <link rel="stylesheet" href="/assets/css/player.css">
+      <script>
+        window.ANIME_STREAM_CONFIG = Object.assign(
+          {
+            siteName: "Anime Stream",
+            siteTagline: "Streaming anime static + HLS + Cloudflare R2",
+            dataBaseUrl: "/data",
+            mediaBaseUrl: "/media",
+            cdnBaseUrl: ""
+          },
+          window.ANIME_STREAM_CONFIG || {}
+        );
+      </script>
+    </head>
+    <body class="page-watch">
+      <header data-app-header></header>
+      <main class="page container">
+        <section class="page-intro">
+  <div>
+    <p class="page-intro__eyebrow">Trình phát HLS</p>
+    <h1>Watch</h1>
+    <p class="page-intro__description">Player custom có quality, phụ đề, tốc độ, fullscreen và lịch sử xem.</p>
+  </div>
+  <div class="page-status" id="watch-status" data-status="idle">Đang chờ stream...</div>
+</section>
+
+<section class="watch-layout">
+  <div class="watch-main">
+    <div class="player-stage" id="player-shell">
+      <video id="anime-player" playsinline preload="metadata"></video>
+    </div>
+
+    <article class="panel">
+      <div class="panel__header">
+        <h2>Thông tin tập</h2>
+        <p>Nội dung đang phát.</p>
+      </div>
+      <div id="watch-info"></div>
+    </article>
+  </div>
+
+  <aside class="watch-sidebar panel">
+    <div class="panel__header">
+      <h2>Danh sách tập</h2>
+      <p>Click để chuyển tập.</p>
+    </div>
+    <div id="watch-episodes"></div>
+  </aside>
+</section>
+
+      </main>
+      <footer data-app-footer></footer>
+      <script type="module" src="/assets/js/pages/watch.js"></script>
+    </body>
+    </html>

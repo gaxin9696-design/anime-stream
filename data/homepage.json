@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "animeId": "attack-on-titan",
+    "eyebrow": "Trending hôm nay",
+    "headline": "Anime streaming tĩnh kiểu Netflix mini",
+    "description": "Mọi thứ đều là static files: data JSON, media HLS, player custom và upload tự động lên Cloudflare R2."
+  },
+  "sections": [
+    {
+      "title": "Xu hướng",
+      "description": "Những bộ demo được ưu tiên ở trang chủ.",
+      "ids": [
+        "attack-on-titan",
+        "naruto",
+        "yosuga-no-sora"
+      ]
+    },
+    {
+      "title": "Mới cập nhật",
+      "description": "Sắp xếp theo updatedAt trong catalog.",
+      "ids": [
+        "attack-on-titan",
+        "naruto"
+      ]
+    },
+    {
+      "title": "Tình cảm & drama",
+      "description": "Ví dụ section nội dung có thể chỉnh trong homepage.json.",
+      "ids": [
+        "yosuga-no-sora",
+        "attack-on-titan"
+      ]
+    }
+  ]
+}

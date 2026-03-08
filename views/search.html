@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="color-scheme" content="dark light" />
+      <meta name="description" content="Anime Stream demo: static streaming site với HLS, Cloudflare Pages và R2." />
+      <title>Anime Stream - Tìm kiếm</title>
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="stylesheet" href="/assets/css/main.css"> <link rel="stylesheet" href="/assets/css/home.css">
+      <script>
+        window.ANIME_STREAM_CONFIG = Object.assign(
+          {
+            siteName: "Anime Stream",
+            siteTagline: "Streaming anime static + HLS + Cloudflare R2",
+            dataBaseUrl: "/data",
+            mediaBaseUrl: "/media",
+            cdnBaseUrl: ""
+          },
+          window.ANIME_STREAM_CONFIG || {}
+        );
+      </script>
+    </head>
+    <body class="page-search">
+      <header data-app-header></header>
+      <main class="page container">
+        <section class="page-intro">
+  <div>
+    <p class="page-intro__eyebrow">Tìm kiếm & lọc</p>
+    <h1>Search</h1>
+    <p class="page-intro__description">Tìm theo tên anime, thể loại, điểm số hoặc năm phát hành.</p>
+  </div>
+  <div class="page-status" id="search-status" data-status="idle">Đang chờ catalog...</div>
+</section>
+
+<section class="search-toolbar panel">
+  <div class="search-toolbar__grid">
+    <label class="field">
+      <span>Từ khoá</span>
+      <input id="search-query" type="search" placeholder="Ví dụ: titan, naruto, romance..." />
+    </label>
+
+    <label class="field">
+      <span>Thể loại</span>
+      <select id="genre-filter"></select>
+    </label>
+
+    <label class="field">
+      <span>Sắp xếp</span>
+      <select id="sort-filter">
+        <option value="trending">Xu hướng</option>
+        <option value="rating">Điểm cao</option>
+        <option value="latest">Mới cập nhật</option>
+        <option value="year-desc">Năm mới → cũ</option>
+        <option value="year-asc">Năm cũ → mới</option>
+        <option value="title">Tên A → Z</option>
+      </select>
+    </label>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="section-heading">
+    <div>
+      <h2>Kết quả</h2>
+      <p>Danh sách anime khớp với bộ lọc của bạn.</p>
+    </div>
+  </div>
+  <div class="anime-grid" id="search-results"></div>
+</section>
+
+      </main>
+      <footer data-app-footer></footer>
+      <script type="module" src="/assets/js/pages/search.js"></script>
+    </body>
+    </html>

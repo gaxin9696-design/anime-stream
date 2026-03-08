@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="color-scheme" content="dark light" />
+      <meta name="description" content="Anime Stream demo: static streaming site với HLS, Cloudflare Pages và R2." />
+      <title>Anime Stream - Chi tiết anime</title>
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="stylesheet" href="/assets/css/main.css"> <link rel="stylesheet" href="/assets/css/home.css">
+      <script>
+        window.ANIME_STREAM_CONFIG = Object.assign(
+          {
+            siteName: "Anime Stream",
+            siteTagline: "Streaming anime static + HLS + Cloudflare R2",
+            dataBaseUrl: "/data",
+            mediaBaseUrl: "/media",
+            cdnBaseUrl: ""
+          },
+          window.ANIME_STREAM_CONFIG || {}
+        );
+      </script>
+    </head>
+    <body class="page-detail">
+      <header data-app-header></header>
+      <main class="page container">
+        <section class="page-intro">
+  <div>
+    <p class="page-intro__eyebrow">Chi tiết anime</p>
+    <h1>Anime detail</h1>
+    <p class="page-intro__description">Metadata, mô tả, danh sách tập và anime liên quan.</p>
+  </div>
+  <div class="page-status" id="detail-status" data-status="idle">Đang chờ anime...</div>
+</section>
+
+<section class="detail-hero" id="detail-hero"></section>
+
+<section class="detail-layout">
+  <article class="panel">
+    <div class="panel__header">
+      <h2>Thông tin</h2>
+      <p>Metadata chính của bộ anime.</p>
+    </div>
+    <ul class="detail-meta" id="detail-meta"></ul>
+  </article>
+
+  <article class="panel">
+    <div class="panel__header">
+      <h2>Tập phim</h2>
+      <p>Chọn tập để bắt đầu phát.</p>
+    </div>
+    <div id="detail-episodes"></div>
+  </article>
+</section>
+
+<section class="content-section">
+  <div class="section-heading">
+    <div>
+      <h2>Anime liên quan</h2>
+      <p>Gợi ý dựa trên thể loại tương đồng.</p>
+    </div>
+  </div>
+  <div class="anime-grid" id="detail-related"></div>
+</section>
+
+      </main>
+      <footer data-app-footer></footer>
+      <script type="module" src="/assets/js/pages/detail.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,86 @@
+{
+  "id": "yosuga-no-sora",
+  "slug": "yosuga-no-sora",
+  "title": "Yosuga no Sora",
+  "titleOriginal": "ヨスガノソラ",
+  "year": 2010,
+  "rating": 7.1,
+  "genres": [
+    "Drama",
+    "Romance",
+    "Slice of Life"
+  ],
+  "status": "Completed",
+  "type": "TV",
+  "poster": "/media/anime/yosuga-no-sora/poster.jpg",
+  "cover": "/media/anime/yosuga-no-sora/cover.jpg",
+  "backdrop": "/media/anime/yosuga-no-sora/backdrop.jpg",
+  "summary": "Hai anh em trở lại quê cũ sau biến cố gia đình. Dữ liệu này chỉ nhằm minh hoạ pipeline player và metadata.",
+  "synopsis": "Bản demo cho genre drama/romance, đủ để test homepage sections, filters và trang xem với phụ đề đa ngôn ngữ.",
+  "studio": "feel.",
+  "maturity": "18+",
+  "duration": "25 phút / tập",
+  "seasons": [
+    {
+      "number": 1,
+      "label": "Season 1",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "title": "A Distant Sky",
+          "overview": "Demo tập 1 với visual mềm, phù hợp để test card romance/drama.",
+          "duration": "00:00:12",
+          "durationSeconds": 12,
+          "badge": "Demo HLS",
+          "thumbnail": "/media/anime/yosuga-no-sora/backdrop.jpg",
+          "stream": {
+            "type": "hls",
+            "master": "/media/anime/yosuga-no-sora/s01/e01/master.m3u8"
+          },
+          "subtitles": [
+            {
+              "label": "Tiếng Việt",
+              "lang": "vi",
+              "src": "/media/anime/yosuga-no-sora/subtitles/e01.vi.vtt",
+              "default": true
+            },
+            {
+              "label": "English",
+              "lang": "en",
+              "src": "/media/anime/yosuga-no-sora/subtitles/e01.en.vtt"
+            }
+          ]
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "title": "Looking Up at the Sky",
+          "overview": "Demo tập 2 để thử chuyển tập trong cùng season.",
+          "duration": "00:00:12",
+          "durationSeconds": 12,
+          "badge": "Demo HLS",
+          "thumbnail": "/media/anime/yosuga-no-sora/backdrop.jpg",
+          "stream": {
+            "type": "hls",
+            "master": "/media/anime/yosuga-no-sora/s01/e02/master.m3u8"
+          },
+          "subtitles": [
+            {
+              "label": "Tiếng Việt",
+              "lang": "vi",
+              "src": "/media/anime/yosuga-no-sora/subtitles/e02.vi.vtt",
+              "default": true
+            },
+            {
+              "label": "English",
+              "lang": "en",
+              "src": "/media/anime/yosuga-no-sora/subtitles/e02.en.vtt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-03-05T00:00:00.000Z"
+}

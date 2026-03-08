@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Action",
+    "slug": "action",
+    "count": 2
+  },
+  {
+    "name": "Adventure",
+    "slug": "adventure",
+    "count": 1
+  },
+  {
+    "name": "Drama",
+    "slug": "drama",
+    "count": 2
+  },
+  {
+    "name": "Fantasy",
+    "slug": "fantasy",
+    "count": 1
+  },
+  {
+    "name": "Romance",
+    "slug": "romance",
+    "count": 1
+  },
+  {
+    "name": "Shounen",
+    "slug": "shounen",
+    "count": 1
+  },
+  {
+    "name": "Slice of Life",
+    "slug": "slice-of-life",
+    "count": 1
+  }
+]

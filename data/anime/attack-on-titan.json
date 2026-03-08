@@ -1,0 +1,86 @@
+{
+  "id": "attack-on-titan",
+  "slug": "attack-on-titan",
+  "title": "Attack on Titan",
+  "titleOriginal": "Shingeki no Kyojin",
+  "year": 2013,
+  "rating": 9.1,
+  "genres": [
+    "Action",
+    "Drama",
+    "Fantasy"
+  ],
+  "status": "Completed",
+  "type": "TV",
+  "poster": "/media/anime/attack-on-titan/poster.jpg",
+  "cover": "/media/anime/attack-on-titan/cover.jpg",
+  "backdrop": "/media/anime/attack-on-titan/backdrop.jpg",
+  "summary": "Nhân loại bị dồn vào bên trong những bức tường khổng lồ, nơi họ đối mặt với hiểm họa Titan. Đây là metadata demo để thử trang chi tiết và player HLS.",
+  "synopsis": "Khi tường thành bị phá, Eren cùng bạn bè lao vào hành trình chiến đấu và tìm hiểu bí mật thế giới. Bản demo này dùng video mẫu tổng hợp để bạn thay bằng file anime thật sau khi encode.",
+  "studio": "Wit Studio",
+  "maturity": "16+",
+  "duration": "24 phút / tập",
+  "seasons": [
+    {
+      "number": 1,
+      "label": "Season 1",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "title": "To You, 2000 Years From Now",
+          "overview": "Demo tập 1 với stream HLS nhiều mức chất lượng, phụ đề Việt/Anh và lịch sử xem localStorage.",
+          "duration": "00:00:12",
+          "durationSeconds": 12,
+          "badge": "Demo HLS",
+          "thumbnail": "/media/anime/attack-on-titan/backdrop.jpg",
+          "stream": {
+            "type": "hls",
+            "master": "/media/anime/attack-on-titan/s01/e01/master.m3u8"
+          },
+          "subtitles": [
+            {
+              "label": "Tiếng Việt",
+              "lang": "vi",
+              "src": "/media/anime/attack-on-titan/subtitles/e01.vi.vtt",
+              "default": true
+            },
+            {
+              "label": "English",
+              "lang": "en",
+              "src": "/media/anime/attack-on-titan/subtitles/e01.en.vtt"
+            }
+          ]
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "title": "That Day",
+          "overview": "Demo tập 2 để test chuyển tập, tập kế và thanh danh sách episode.",
+          "duration": "00:00:12",
+          "durationSeconds": 12,
+          "badge": "Demo HLS",
+          "thumbnail": "/media/anime/attack-on-titan/backdrop.jpg",
+          "stream": {
+            "type": "hls",
+            "master": "/media/anime/attack-on-titan/s01/e02/master.m3u8"
+          },
+          "subtitles": [
+            {
+              "label": "Tiếng Việt",
+              "lang": "vi",
+              "src": "/media/anime/attack-on-titan/subtitles/e02.vi.vtt",
+              "default": true
+            },
+            {
+              "label": "English",
+              "lang": "en",
+              "src": "/media/anime/attack-on-titan/subtitles/e02.en.vtt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-03-07T00:00:00.000Z"
+}

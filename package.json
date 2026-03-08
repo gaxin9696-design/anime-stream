@@ -1,0 +1,32 @@
+{
+  "name": "anime-stream",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Static anime streaming site demo with HLS.js, Cloudflare Pages and Cloudflare R2.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler pages dev . --port=8788 --local-protocol=http",
+    "catalog:generate": "node scripts/catalog/catalog-generator.mjs",
+    "catalog:validate": "node scripts/catalog/validate-catalog.mjs",
+    "catalog:sync-posters": "node scripts/catalog/sync-posters.mjs",
+    "maint:check": "node scripts/maintenance/check-missing-files.mjs",
+    "maint:rename": "node scripts/maintenance/rename-anime-folders.mjs",
+    "maint:cleanup": "node scripts/maintenance/cleanup.mjs",
+    "r2:upload": "node scripts/deploy/upload-r2.mjs",
+    "r2:purge": "node scripts/deploy/purge-cache.mjs",
+    "pages:prepare": "node scripts/deploy/deploy-site.mjs --prepare-only",
+    "pages:deploy": "node scripts/deploy/deploy-site.mjs --deploy"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.821.0",
+    "dotenv": "^16.4.7",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.1"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "naruto",
+  "slug": "naruto",
+  "title": "Naruto",
+  "titleOriginal": "ナルト",
+  "year": 2002,
+  "rating": 8.4,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Shounen"
+  ],
+  "status": "Completed",
+  "type": "TV",
+  "poster": "/media/anime/naruto/poster.jpg",
+  "cover": "/media/anime/naruto/cover.jpg",
+  "backdrop": "/media/anime/naruto/backdrop.jpg",
+  "summary": "Naruto Uzumaki là cậu bé ninja ồn ào luôn khao khát được công nhận. Bản metadata mẫu được rút gọn để làm demo frontend.",
+  "synopsis": "Bộ dữ liệu này giúp test card, detail, search và watch page mà không cần backend. Bạn có thể thay toàn bộ bằng dữ liệu thật sau khi encode.",
+  "studio": "Studio Pierrot",
+  "maturity": "13+",
+  "duration": "23 phút / tập",
+  "seasons": [
+    {
+      "number": 1,
+      "label": "Season 1",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "title": "Enter: Naruto Uzumaki!",
+          "overview": "Demo tập mở đầu cho Naruto, dùng cùng pipeline HLS.",
+          "duration": "00:00:12",
+          "durationSeconds": 12,
+          "badge": "Demo HLS",
+          "thumbnail": "/media/anime/naruto/backdrop.jpg",
+          "stream": {
+            "type": "hls",
+            "master": "/media/anime/naruto/s01/e01/master.m3u8"
+          },
+          "subtitles": [
+            {
+              "label": "Tiếng Việt",
+              "lang": "vi",
+              "src": "/media/anime/naruto/subtitles/e01.vi.vtt",
+              "default": true
+            },
+            {
+              "label": "English",
+              "lang": "en",
+              "src": "/media/anime/naruto/subtitles/e01.en.vtt"
+            }
+          ]
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "title": "My Name is Konohamaru!",
+          "overview": "Demo tập 2 cho việc thử next episode và side panel.",
+          "duration": "00:00:12",
+          "durationSeconds": 12,
+          "badge": "Demo HLS",
+          "thumbnail": "/media/anime/naruto/backdrop.jpg",
+          "stream": {
+            "type": "hls",
+            "master": "/media/anime/naruto/s01/e02/master.m3u8"
+          },
+          "subtitles": [
+            {
+              "label": "Tiếng Việt",
+              "lang": "vi",
+              "src": "/media/anime/naruto/subtitles/e02.vi.vtt",
+              "default": true
+            },
+            {
+              "label": "English",
+              "lang": "en",
+              "src": "/media/anime/naruto/subtitles/e02.en.vtt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-03-06T00:00:00.000Z"
+}

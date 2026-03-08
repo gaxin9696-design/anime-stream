@@ -1,0 +1,266 @@
+Folder PATH listing
+Volume serial number is B818-C6BE
+C:.
+|   .env.example
+|   .gitignore
+|   404.html
+|   favicon.ico
+|   index.html
+|   LICENSE
+|   package-lock.json
+|   package.json
+|   README.md
+|   robots.txt
+|   sitemap.xml
+|   structure.txt
+|   
++---assets
+|   +---css
+|   |       home.css
+|   |       main.css
+|   |       player.css
+|   |       watch.css
+|   |       
+|   +---fonts
+|   |       inter.woff2
+|   |       README.txt
+|   |       
+|   +---images
+|   |   |   banner-home.jpg
+|   |   |   logo.png
+|   |   |   
+|   |   +---icons
+|   |   |       pause.svg
+|   |   |       play.svg
+|   |   |       search.svg
+|   |   |       
+|   |   \---placeholders
+|   |           poster-fallback.jpg
+|   |           
+|   \---js
+|       +---components
+|       |       card.js
+|       |       episode-list.js
+|       |       footer.js
+|       |       header.js
+|       |       player-controls.js
+|       |       
+|       +---core
+|       |       app.js
+|       |       config.js
+|       |       dom.js
+|       |       fetcher.js
+|       |       router.js
+|       |       utils.js
+|       |       
+|       +---libs
+|       |       hls.min.js
+|       |       
+|       +---pages
+|       |       detail.js
+|       |       home.js
+|       |       search.js
+|       |       watch.js
+|       |       
+|       \---player
+|               history.js
+|               hls-player.js
+|               player.js
+|               quality.js
+|               subtitles.js
+|               
++---data
+|   |   catalog.json
+|   |   genres.json
+|   |   homepage.json
+|   |   
+|   \---anime
+|           attack-on-titan.json
+|           naruto.json
+|           yosuga-no-sora.json
+|           
++---docs
+|       architecture.md
+|       catalog-schema.md
+|       deployment.md
+|       media-structure.md
+|       
++---media
+|   \---anime
+|       +---attack-on-titan
+|       |   |   backdrop.jpg
+|       |   |   cover.jpg
+|       |   |   poster.jpg
+|       |   |   
+|       |   +---s01
+|       |   |   +---e01
+|       |   |   |   |   master.m3u8
+|       |   |   |   |   
+|       |   |   |   +---1080p
+|       |   |   |   |       index.m3u8
+|       |   |   |   |       seg_000.ts
+|       |   |   |   |       seg_001.ts
+|       |   |   |   |       
+|       |   |   |   +---360p
+|       |   |   |   |       index.m3u8
+|       |   |   |   |       seg_000.ts
+|       |   |   |   |       seg_001.ts
+|       |   |   |   |       
+|       |   |   |   \---720p
+|       |   |   |           index.m3u8
+|       |   |   |           seg_000.ts
+|       |   |   |           seg_001.ts
+|       |   |   |           
+|       |   |   \---e02
+|       |   |       |   master.m3u8
+|       |   |       |   
+|       |   |       +---1080p
+|       |   |       |       index.m3u8
+|       |   |       |       seg_000.ts
+|       |   |       |       seg_001.ts
+|       |   |       |       
+|       |   |       +---360p
+|       |   |       |       index.m3u8
+|       |   |       |       seg_000.ts
+|       |   |       |       seg_001.ts
+|       |   |       |       
+|       |   |       \---720p
+|       |   |               index.m3u8
+|       |   |               seg_000.ts
+|       |   |               seg_001.ts
+|       |   |               
+|       |   \---subtitles
+|       |           e01.en.vtt
+|       |           e01.vi.vtt
+|       |           e02.en.vtt
+|       |           e02.vi.vtt
+|       |           
+|       +---naruto
+|       |   |   backdrop.jpg
+|       |   |   cover.jpg
+|       |   |   poster.jpg
+|       |   |   
+|       |   +---s01
+|       |   |   +---e01
+|       |   |   |   |   master.m3u8
+|       |   |   |   |   
+|       |   |   |   +---1080p
+|       |   |   |   |       index.m3u8
+|       |   |   |   |       seg_000.ts
+|       |   |   |   |       seg_001.ts
+|       |   |   |   |       
+|       |   |   |   +---360p
+|       |   |   |   |       index.m3u8
+|       |   |   |   |       seg_000.ts
+|       |   |   |   |       seg_001.ts
+|       |   |   |   |       
+|       |   |   |   \---720p
+|       |   |   |           index.m3u8
+|       |   |   |           seg_000.ts
+|       |   |   |           seg_001.ts
+|       |   |   |           
+|       |   |   \---e02
+|       |   |       |   master.m3u8
+|       |   |       |   
+|       |   |       +---1080p
+|       |   |       |       index.m3u8
+|       |   |       |       seg_000.ts
+|       |   |       |       seg_001.ts
+|       |   |       |       
+|       |   |       +---360p
+|       |   |       |       index.m3u8
+|       |   |       |       seg_000.ts
+|       |   |       |       seg_001.ts
+|       |   |       |       
+|       |   |       \---720p
+|       |   |               index.m3u8
+|       |   |               seg_000.ts
+|       |   |               seg_001.ts
+|       |   |               
+|       |   \---subtitles
+|       |           e01.en.vtt
+|       |           e01.vi.vtt
+|       |           e02.en.vtt
+|       |           e02.vi.vtt
+|       |           
+|       \---yosuga-no-sora
+|           |   backdrop.jpg
+|           |   cover.jpg
+|           |   poster.jpg
+|           |   
+|           +---s01
+|           |   +---e01
+|           |   |   |   master.m3u8
+|           |   |   |   
+|           |   |   +---1080p
+|           |   |   |       index.m3u8
+|           |   |   |       seg_000.ts
+|           |   |   |       seg_001.ts
+|           |   |   |       
+|           |   |   +---360p
+|           |   |   |       index.m3u8
+|           |   |   |       seg_000.ts
+|           |   |   |       seg_001.ts
+|           |   |   |       
+|           |   |   \---720p
+|           |   |           index.m3u8
+|           |   |           seg_000.ts
+|           |   |           seg_001.ts
+|           |   |           
+|           |   \---e02
+|           |       |   master.m3u8
+|           |       |   
+|           |       +---1080p
+|           |       |       index.m3u8
+|           |       |       seg_000.ts
+|           |       |       seg_001.ts
+|           |       |       
+|           |       +---360p
+|           |       |       index.m3u8
+|           |       |       seg_000.ts
+|           |       |       seg_001.ts
+|           |       |       
+|           |       \---720p
+|           |               index.m3u8
+|           |               seg_000.ts
+|           |               seg_001.ts
+|           |               
+|           \---subtitles
+|                   e01.en.vtt
+|                   e01.vi.vtt
+|                   e02.en.vtt
+|                   e02.vi.vtt
+|                   
++---public
+|       favicon.ico
+|       robots.txt
+|       sitemap.xml
+|       
++---scripts
+|   +---catalog
+|   |       catalog-generator.mjs
+|   |       sync-posters.mjs
+|   |       validate-catalog.mjs
+|   |       
+|   +---deploy
+|   |       deploy-site.mjs
+|   |       purge-cache.mjs
+|   |       upload-r2.mjs
+|   |       
+|   +---encode
+|   |       batch-encode.ps1
+|   |       build-hls.ps1
+|   |       ffmpeg-presets.json
+|   |       
+|   \---maintenance
+|           check-missing-files.mjs
+|           cleanup.mjs
+|           rename-anime-folders.mjs
+|           
+\---views
+        404.html
+        detail.html
+        home.html
+        search.html
+        watch.html
+        
