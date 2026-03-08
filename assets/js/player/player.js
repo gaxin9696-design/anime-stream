@@ -4,13 +4,6 @@ import { createPlayerControls } from "../components/player-controls.js";
 import { createHlsPlayer } from "./hls-player.js";
 import { getWatchProgress, saveWatchProgress } from "./history.js";
 import { buildQualityOptions } from "./quality.js";
-import {
-  getActiveSubtitle,
-  listSubtitleOptions,
-  mountSubtitleTracks,
-  pickDefaultSubtitle,
-  selectSubtitleTrack
-} from "./subtitles.js";
 
 export const initAnimePlayer = async ({
   video,
@@ -49,11 +42,6 @@ export const initAnimePlayer = async ({
     onQualityChange(value) {
       backend?.setQuality?.(value);
       controls.setCurrentQuality(value);
-    },
-
-    onSubtitleChange(value) {
-      selectSubtitleTrack(video, value);
-      controls.setCurrentSubtitle(value);
     },
 
     onNext: nextEpisode
@@ -116,14 +104,14 @@ export const initAnimePlayer = async ({
   }
 
   /*
-=====================
-MP4 STREAM (PixelDrain)
-=====================
-*/
+  =====================
+  MP4 STREAM
+  =====================
+  */
 
   else if (stream?.type === "mp4") {
 
-    video.src = stream.file.replace("?download", "");
+    video.src = stream.file;
 
     video.crossOrigin = "anonymous";
 
@@ -151,29 +139,13 @@ MP4 STREAM (PixelDrain)
 
   /*
   =====================
-  SUBTITLES
+  RESUME WATCH PROGRESS
   =====================
   */
-
-  mountSubtitleTracks(video, episode.subtitles ?? []);
-
-  controls.setSubtitleOptions(listSubtitleOptions(video));
 
   video.addEventListener(
     "loadedmetadata",
     () => {
-
-      const options = listSubtitleOptions(video);
-
-      controls.setSubtitleOptions(options);
-
-      if (options.length > 1) {
-
-        const active = pickDefaultSubtitle(video);
-
-        controls.setCurrentSubtitle(active);
-
-      }
 
       const key = `${episode.season}-${episode.number}`;
 
@@ -283,12 +255,6 @@ MP4 STREAM (PixelDrain)
       controls.destroy();
 
       backend?.destroy?.();
-
-    },
-
-    getActiveSubtitle() {
-
-      return getActiveSubtitle(video);
 
     }
 
